@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E4A9E0101DC3274200D4E66D /* VerifyView.m in Sources */ = {isa = PBXBuildFile; fileRef = E4A9E00F1DC3274200D4E66D /* VerifyView.m */; };
 		E4E9FD391DC2E66800C91D82 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E4E9FD381DC2E66800C91D82 /* main.m */; };
 		E4E9FD3C1DC2E66800C91D82 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E4E9FD3B1DC2E66800C91D82 /* AppDelegate.m */; };
 		E4E9FD3F1DC2E66800C91D82 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4E9FD3E1DC2E66800C91D82 /* ViewController.m */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E4A9E00E1DC3274200D4E66D /* VerifyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VerifyView.h; sourceTree = "<group>"; };
+		E4A9E00F1DC3274200D4E66D /* VerifyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VerifyView.m; sourceTree = "<group>"; };
 		E4E9FD341DC2E66800C91D82 /* FingerPrint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FingerPrint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4E9FD381DC2E66800C91D82 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E4E9FD3A1DC2E66800C91D82 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -67,6 +70,8 @@
 				E4E9FD451DC2E66800C91D82 /* LaunchScreen.storyboard */,
 				E4E9FD481DC2E66800C91D82 /* Info.plist */,
 				E4E9FD371DC2E66800C91D82 /* Supporting Files */,
+				E4A9E00E1DC3274200D4E66D /* VerifyView.h */,
+				E4A9E00F1DC3274200D4E66D /* VerifyView.m */,
 			);
 			path = FingerPrint;
 			sourceTree = "<group>";
@@ -154,6 +159,7 @@
 				E4E9FD3F1DC2E66800C91D82 /* ViewController.m in Sources */,
 				E4E9FD3C1DC2E66800C91D82 /* AppDelegate.m in Sources */,
 				E4E9FD391DC2E66800C91D82 /* main.m in Sources */,
+				E4A9E0101DC3274200D4E66D /* VerifyView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,6 +318,7 @@
 				E4E9FD4D1DC2E66800C91D82 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
