@@ -64,7 +64,9 @@
         }
         
         // verify TouchID
-        [context evaluatePolicy:LAPolicyDeviceOwnerAuthenticationWithBiometrics
+        // 用LAPolicyDeviceOwnerAuthentication可以在指纹密码失败之后调出系统密码键盘
+        // 用LAPolicyDeviceOwnerAuthenticationWithBiometrics智能是指纹识别
+        [context evaluatePolicy:LAPolicyDeviceOwnerAuthentication
                 localizedReason:@"test for fun"
                           reply:^(BOOL success, NSError * _Nullable error) {
                               if (success)
@@ -120,8 +122,6 @@
                                       {
                                           [[NSOperationQueue mainQueue] addOperationWithBlock:^{
                                               NSLog(@"用户选择输入密码，切换主线程处理");
-                                              NSURL *url = [NSURL URLWithString:@"prefs:root=PASSCODE"];
-                                              [[UIApplication sharedApplication] openURL:url];
                                           }];
                                           break;
                                       }
